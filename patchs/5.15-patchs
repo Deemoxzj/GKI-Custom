@@ -80,11 +80,10 @@ index 6d63a5260130..b96fe706b5ef 100644
 +#else
  	ANDROID_KABI_RESERVE(1);
  	ANDROID_KABI_RESERVE(2);
- 	ANDROID_OEM_DATA_ARRAY(1, 2);
 +#endif
  };
  
- extern int uids_sysfs_init(void);
+ struct ext_user_struct {
 
 diff --git a/kernel/cgroup/cgroup.c b/kernel/cgroup/cgroup.c
 index 193f092ea393..a2fffa8c4fd6 100644
